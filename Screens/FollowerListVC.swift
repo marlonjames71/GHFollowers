@@ -46,6 +46,7 @@ class FollowerListVC: UIViewController {
 		collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewLayout())
 		view.addSubview(collectionView)
 		collectionView.backgroundColor = .systemPink
+		collectionView.alwaysBounceVertical = true
 		collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.resuseID)
 	}
 }
