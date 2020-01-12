@@ -35,6 +35,7 @@ class GFTextField: UITextField {
 		minimumFontSize = 12
 
 		backgroundColor = .tertiarySystemBackground
+		autocapitalizationType = .none
 		autocorrectionType = .no
 		returnKeyType = .go
 		clearButtonMode = .whileEditing

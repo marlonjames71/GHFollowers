@@ -30,11 +30,6 @@ class SearchVC: UIViewController {
 		navigationController?.setNavigationBarHidden(true, animated: true)
 	}
 
-	override func viewDidAppear(_ animated: Bool) {
-		super.viewDidAppear(animated)
-		usernameTextField.becomeFirstResponder()
-	}
-
 	func createDismissKeyboardTapGesture() {
 		let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
 		view.addGestureRecognizer(tap)
