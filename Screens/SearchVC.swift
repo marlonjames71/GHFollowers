@@ -27,7 +27,12 @@ class SearchVC: UIViewController {
 
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		navigationController?.isNavigationBarHidden = true
+		navigationController?.setNavigationBarHidden(true, animated: true)
+	}
+
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		usernameTextField.becomeFirstResponder()
 	}
 
 	func createDismissKeyboardTapGesture() {
