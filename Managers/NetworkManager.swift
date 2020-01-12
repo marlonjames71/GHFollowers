@@ -6,12 +6,13 @@
 //  Copyright © 2020 Marlon Raskin. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class NetworkManager {
 	static let shared = NetworkManager()
-	let baseURL = "https://api.github.com/users/"
+	private let baseURL = "https://api.github.com/users/"
 	let pageAmount: Int = 100
+	let cache = NSCache<NSString, UIImage>()
 
 	let jsonDecoder: JSONDecoder = {
 		let decoder = JSONDecoder()
