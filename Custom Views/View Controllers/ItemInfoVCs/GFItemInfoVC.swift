@@ -32,6 +32,7 @@ class GFItemInfoVC: UIViewController {
         super.viewDidLoad()
 		configureBackgroundView()
 		layoutUI()
+		configureStackView()
     }
 
 
